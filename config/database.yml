@@ -5,11 +5,11 @@ default: &default
 
 development:
   <<: *default
-  database: test_mutter_development
+  database: rename_test_mutter_development
 
 test:
   <<: *default
-  database: test_mutter_test
+  database: rename_test_mutter_test
 
 production:
   <<: *default
