@@ -2,6 +2,6 @@
 <%= form_with(model: @post, local: true) do |form| %>
   <%= form.hidden_field :content %>
   <p>内容</p>
-  <%= @post.content %>
+  <%= @post.content %><br>
   <%= form.submit  "ツイートする" %>
 <% end %>
