@@ -8,12 +8,18 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
-    redirect_to new_post_path
+    @post = Post.new(post_params)
+    if @post.save
+      redirect_to posts_path, notice: "ツイートしました！"
+    else
+      render :new
+    end
   end
+
   def show
     @post = Post.find(params[:id])
   end
+
   private
   def post_params
     params.require(:post).permit(:content)

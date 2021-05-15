@@ -1,4 +1,14 @@
 <%= form_with(model: @post, local: true) do |form| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @post.errors.count %>件のエラーがあります。</h2>
+      <ol>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ol>
+    </div>
+  <% end %>
   <div class="blog_content">
     <%= form.label :ツイート内容 %><br>
     <%= form.text_area :content ,placeholder: "いまどうしてる？",size: "28x5" %>
