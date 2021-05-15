@@ -8,8 +8,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header>
+      <ul>
+        <li><a href="#">Bootstrapテキストページ</a></li>
+        <li><a href="#">トップページ</a></li>
+      </ul>
+    </header>
     <%= yield %>
+    <footer>
+      <p>運営会社Mutter株式会社</p>
+      <p>©  Mutter Corp.</p>
+    </footer>
   </body>
 </html>
