@@ -1,5 +1,6 @@
 body {
   padding-top: 150px;
+  text-align: center;
 }
 header {
   width: 100%;
@@ -30,6 +31,11 @@ header li {
 }
 header nav {
   margin: 0 0 0 auto;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px;
 }
 footer {
   width: 100%;
