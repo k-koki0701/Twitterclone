@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.5'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 #view/front
+
 gem 'sass-rails', '~> 5.0'
 gem 'coffee-rails', '~> 4.2'
 em 'bootsnap', '>= 1.1.0', require: false
