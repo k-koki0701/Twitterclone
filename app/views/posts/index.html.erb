@@ -4,12 +4,12 @@
 <table>
 <% @posts.each do |post| %>
     <tr>
-      <th>内容</th>
+      <td><内容></td>
     </tr>
     <tr>
       <td><%= post.content %></td>
    </tr>
-   <tr>
+   <tr class="tweet_border">
       <td><%= link_to '詳細', post_path(post.id) %>
       <%= link_to '編集', edit_post_path(post.id) %>
       <%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '本当に編集していいですか？' } %>
