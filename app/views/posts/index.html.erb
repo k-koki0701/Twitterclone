@@ -1,5 +1,6 @@
 <h1>ツイート一覧</h1>
 <p><%= notice %></p>
+<div>
 <table>
 <% @posts.each do |post| %>
   <tr>
@@ -16,4 +17,5 @@
   </tr>
 <% end %>
 </table>
+</div>
 <%= link_to 'ツイートする',new_post_path %>

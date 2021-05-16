@@ -4,17 +4,22 @@
     <title>TestMutter</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <header>
+  <header>
+    <h1>
+      <a href="/">Mutter</a>
+    </h1>
+    <nav class="pc-nav">
       <ul>
-        <li><a href="#">Bootstrapテキストページ</a></li>
-        <li><a href="#">トップページ</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">TOPIC</a></li>
       </ul>
-    </header>
+    </nav>
+  </header>
     <%= yield %>
     <footer>
       <p>運営会社Mutter株式会社</p>
